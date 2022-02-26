@@ -10,9 +10,8 @@ function getRandomIntInclusive(min, max) {
 // проверка максимальной длинны строки
 // https://www.w3resource.com/javascript/form/string-length.php
 
-function lengthRange(inputtxt, minlength, maxlength)
-{
-   const userInput = inputtxt.value;
+function lengthRange(inputtxt, minlength, maxlength) {
+  const userInput = inputtxt.value;
    if(userInput.length >= minlength && userInput.length <= maxlength)
       {
         return true;
