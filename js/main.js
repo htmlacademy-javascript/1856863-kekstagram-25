@@ -100,10 +100,10 @@ const getObjectsArray = () => {
 };
 
 // Функция, создания объекта фото+комментарий из массива
-let id;
+let id = 1;
 const createRandomPost = () => ({
   id: (id++),
-  url: `img/avatar-${String(id++)}.svg`,
+  url: `img/avatar-${String(id)}.svg`,
   description: 'Hello, world!',
   likes: getLikesNumber(),
   comments: getObjectsArray()
