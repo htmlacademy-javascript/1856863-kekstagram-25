@@ -90,7 +90,7 @@ const getObjectsArray = () => {
   for (let i = 1; i <= getObjectsNumber(); i++) {
     const CommentsObject = {
       id: i,
-      avatar: 'img/avatar-{getAvatarsNumber()}.svg',
+      avatar: `img/avatar-${getAvatarsNumber()}.svg`,
       message: COMMENTS[getCommentsNumber()],
       name: NAMES[getNamesNumber()],
     };
@@ -100,14 +100,13 @@ const getObjectsArray = () => {
 };
 
 // Функция, создания объекта фото+комментарий из массива
+let id;
 const createRandomPost = () => ({
-  author: {
-    id: (id++),
-    url: 'img/avatar-{String(id+)}.svg',
-    description: 'Hello, world!',
-    likes: getLikesNumber(),
-    comments: getObjectsArray()
-  }
+  id: (id++),
+  url: `img/avatar-${String(id++)}.svg`,
+  description: 'Hello, world!',
+  likes: getLikesNumber(),
+  comments: getObjectsArray()
 });
 
 // Создание и вывод массива
