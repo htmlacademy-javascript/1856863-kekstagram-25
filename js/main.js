@@ -75,6 +75,7 @@ const MAX_AVATAR = 6;
 const MIN_OBJECT = 1;
 const MAX_OBJECT = 6;
 const OBJECT_COUNT = 25;
+let commentsId = 1;
 
 // Функции по генерации случайных чисел по заданным числовым значениям
 
@@ -89,7 +90,7 @@ const getObjectsArray = () => {
   const ObjectsArray = [];
   for (let i = 1; i <= getObjectsNumber(); i++) {
     const CommentsObject = {
-      id: i,
+      id: commentsId++,
       avatar: `img/avatar-${getAvatarsNumber()}.svg`,
       message: COMMENTS[getCommentsNumber()],
       name: NAMES[getNamesNumber()],
@@ -103,7 +104,7 @@ const getObjectsArray = () => {
 let id = 1;
 const createRandomPost = () => ({
   id: (id++),
-  url: `img/avatar-${String(id)}.svg`,
+  url: `photos/${String(id)}.svg`,
   description: 'Hello, world!',
   likes: getLikesNumber(),
   comments: getObjectsArray()
@@ -114,3 +115,5 @@ const getOutput = () =>
   Array.from({
     length: OBJECT_COUNT,
   }, createRandomPost);
+
+getOutput();
