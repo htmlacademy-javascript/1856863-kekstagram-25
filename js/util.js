@@ -42,7 +42,6 @@ const getRandomNumberArray = (min,max) => {
 };
 
 export {getRandomNumber};
-export {getRange};
 export {getRandomNumberArray};
 
 
