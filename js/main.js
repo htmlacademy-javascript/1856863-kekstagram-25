@@ -1,5 +1,5 @@
 import {getOutput} from './data.js';
-import {createPhotoTemplate} from './thumbnail';
+import {pictureBase} from './thumbnail.js';
 
 const photosInfo = getOutput();
-createPhotoTemplate(photosInfo);
+pictureBase(photosInfo);

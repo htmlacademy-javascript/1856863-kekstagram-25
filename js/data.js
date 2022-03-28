@@ -52,7 +52,7 @@ const getObjectsArray = () => {
   for (let i = 1; i <= getObjectsNumber(); i++) {
     const CommentsObject = {
       id: commentsId++,
-      avatar: `img/avatar-${getAvatarsNumber()}.svg`,
+      avatar: `img/avatar-${getAvatarsNumber()}.jpg`,
       message: COMMENTS[getCommentsNumber()],
       name: NAMES[getNamesNumber()],
     };
@@ -66,7 +66,7 @@ const getObjectsArray = () => {
 let id = 1;
 const createRandomPost = () => ({
   id: (id++),
-  url: `photos/${String(id)}.svg`,
+  url: `photos/${String(id)}.jpg`,
   description: 'Hello, world!',
   likes: getLikesNumber(),
   comments: getObjectsArray()
