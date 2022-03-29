@@ -63,7 +63,7 @@ const getObjectsArray = () => {
 
 // Функция, создания объекта фото+комментарий из массива
 
-let id = 1;
+let id = 0;
 const createRandomPost = () => ({
   id: (id++),
   url: `photos/${String(id)}.jpg`,
