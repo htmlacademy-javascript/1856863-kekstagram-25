@@ -23,7 +23,7 @@ const getRange = (stringChecked, maxLength) => stringChecked.length <= maxLength
 
 getRange(1, 120);
 
-// Генерация случайного числа из массива
+// Генерация случайного числа из массива.
 
 let RandomNumberArray;
 const getRandomNumberArray = (min, max) => {

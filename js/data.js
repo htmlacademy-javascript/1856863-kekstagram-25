@@ -72,7 +72,7 @@ const createRandomPost = () => ({
   comments: getObjectsArray()
 });
 
-// Создание и вывод массива
+// Создание и вывод массива.
 
 const getOutput = () =>
   Array.from({
