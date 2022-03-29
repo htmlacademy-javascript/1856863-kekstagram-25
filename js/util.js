@@ -26,7 +26,7 @@ getRange(1, 120);
 // Генерация случайного числа из массива.
 
 let RandomNumberArray;
-const getRandomNumberArray = (min, max) => {
+
   const array = [];
   for (let i = min; i < max; i++) {
     RandomNumberArray = getRandomNumber(min, max);
