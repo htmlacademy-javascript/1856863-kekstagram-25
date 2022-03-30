@@ -63,16 +63,16 @@ const getObjectsArray = () => {
 
 // Функция, создания объекта фото+комментарий из массива
 
-let id = 1;
+let id = 0;
 const createRandomPost = () => ({
   id: (id++),
-  url: `photos/${String(id)}.svg`,
+  url: `photos/${String(id)}.jpg`,
   description: 'Hello, world!',
   likes: getLikesNumber(),
   comments: getObjectsArray()
 });
 
-// Создание и вывод массива
+// Создание и вывод массива.
 
 const getOutput = () =>
   Array.from({

@@ -23,10 +23,10 @@ const getRange = (stringChecked, maxLength) => stringChecked.length <= maxLength
 
 getRange(1, 120);
 
-// Генерация случайного числа из массива
+// Генерация случайного числа из массива.
 
 let RandomNumberArray;
-const getRandomNumberArray = (min,max) => {
+const getRandomNumberArray = (min, max) => {
   const array = [];
   for (let i = min; i < max; i++) {
     RandomNumberArray = getRandomNumber(min, max);
@@ -41,6 +41,12 @@ const getRandomNumberArray = (min,max) => {
   return RandomNumberArray;
 };
 
+// Нажатие ESC
+// https://stackoverflow.com/questions/3369593/how-to-detect-escape-key-press-with-pure-js-or-jquery
+
+const pressEscapeKey =  (evt) => evt.key === 'Escape';
+
+export {pressEscapeKey};
 export {getRandomNumber};
 export {getRandomNumberArray};
 
