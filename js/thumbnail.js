@@ -6,7 +6,7 @@ const pictureBase = (photos) => {
   const templateFragment = document.querySelector('#picture').content.querySelector('.picture');
   const fragment = document.createDocumentFragment();
 
-  // Наполнение шаблона миниатюра+лайки+комментарии
+  // Наполнение шаблона миниатюра+лайки+комментарии.
   photos.forEach((photoElement) => {
     const {url, likes, comments} = photoElement;
     const photoTemplate = templateFragment.cloneNode(true);
