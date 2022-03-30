@@ -1,4 +1,4 @@
-import {pressEscapeKey} from './util.js'
+import {pressEscapeKey} from './util.js';
 
 // Поиск элементов
 const bigPicture = document.querySelector('.big-picture');
