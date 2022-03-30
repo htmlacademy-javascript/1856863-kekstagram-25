@@ -1,3 +1,5 @@
+import {createFullSizePicture} from './full-size-picture.js';
+
 const pictureBase = (photos) => {
   // Поиск и создание фрагмента шаблона
   const galleryUsersPhotos = document.querySelector('.pictures');
@@ -11,6 +13,10 @@ const pictureBase = (photos) => {
     photoTemplate.querySelector('.picture__img').src = url;
     photoTemplate.querySelector('.picture__likes').textContent = likes;
     photoTemplate.querySelector('.picture__comments').textContent = comments.length;
+
+    photoTemplate.addEventListener('click', () => {
+      createFullSizePicture(photoElement);
+    });
 
     fragment.appendChild(photoTemplate);
   });

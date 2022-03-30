@@ -1,1 +1,3 @@
-import {getOutput} from './data.js';
+import {getGallery} from './gallery.js';
+
+getGallery();
