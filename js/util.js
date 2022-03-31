@@ -41,7 +41,7 @@ const getRandomNumberArray = (min, max) => {
   return RandomNumberArray;
 };
 
-// Нажатие ESC
+// Нажатие ESC.
 // https://stackoverflow.com/questions/3369593/how-to-detect-escape-key-press-with-pure-js-or-jquery
 
 const pressEscapeKey =  (evt) => evt.key === 'Escape';

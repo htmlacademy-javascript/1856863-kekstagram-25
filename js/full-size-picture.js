@@ -44,7 +44,7 @@ const openFullSizePicture = () => {
   document.addEventListener('keydown', closeButtonOnClick);
 };
 
-// Создание и наполнение шаблона картинка+лайки+комментарии+описание
+// Создание и наполнение шаблона картинка+лайки+комментарии+описание.
 const createFullSizePicture = (photoElement) => {
   const {url, likes, comments, detail} = photoElement;
   bigPictureImg.src = url;
